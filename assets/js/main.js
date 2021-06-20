@@ -1,16 +1,17 @@
+
+// Modal & simple validation
+
 const siteAddress = document.getElementById("siteAddress");
 const siteMail = document.getElementById("siteEmail");
 
 const inputs = [siteAddress , siteMail];
 inputs.forEach( input => {
     input.addEventListener("change" , (e)=> {
-        console.log(e.target.value);
         if(e.target.value.trim().length > 0){
             input.classList.remove("input_error")
         }
     })
 })
-
 
 const formModal = new bootstrap.Modal(document.getElementById('formModal'));
 document.getElementById("freescan").addEventListener("click" , function(e) {
@@ -20,9 +21,10 @@ document.getElementById("freescan").addEventListener("click" , function(e) {
     } else {
         formModal.show()
     }
-    console.log("click")
 });
 
+
+// toggling footer links
 const arrows = document.querySelectorAll(".footer__links h4 img");
 
 arrows.forEach( arrw => {
