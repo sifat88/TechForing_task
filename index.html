@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechForing</title>
+    <link rel="shortcut icon" href="assets/techforing.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="techforing" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn sign_btn" href="#">Sign In /  Sign Up</a>
+                    </li>
+                </div>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome__section">
+            <div class="container">
+                <div class="welcome__content">
+                    <div class="welcome__text">
+                        <h1>techforing Vulnerability Scanner</h1>
+                        <p>THIRDEYE is an online vulnerability scanner that finds cyber security weaknesses in your digital infrastructure before the hackers do.Discover common web application vulnerabilities and server configuration issues.</p>
+                    </div>
+                    <div class="welcome__form">
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="siteAddress" placeholder="https://www.example.com/">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control" id="siteEmail" placeholder="your email address">
+                            </div>
+                            <button type="submit" id="freescan" class="btn btn-primary">free scan</button>
+                        </form>
+                    </div>
+                    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>https://www.flaticon.com/search?word=real%20time</h3>
+                        </div>
+                        <div class="modal-body">
+                            <h1>Your scan has been completed</h1>
+                            <button class="btn" data-bs-dismiss="modal">Access Report</button>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>https://www.flaticon.com/search?word=real%20time</h3>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trusted__companies">
+            <div class="common__header">
+                <h1>Trusted by IT & Telecom Companies Like</h1>
+            </div>
+            <div class="clients__container">
+                <div class="container">
+                <div class="companies__block">
+                    <div class="company__img">
+                        <img src="assets/images/clients/webtrix.png" alt="webtrix" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/gurus.png" alt="gurus" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/dci.png" alt="dci" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/active_adult_living.png" alt="active adult living" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/enterprise.png" alt="enterprise" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/dev_factory.png" alt="dev factory" class="img-fluid">
+                    </div>
+                    <div class="company__img">
+                        <img src="assets/images/clients/sark.png" alt="sark" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="scan__section">
+            <div class="container">
+                <div class="common__header">
+                    <h1>Want a full scan?</h1>
+                    <p>Website Vulnerability Free scan performs a passive web security scan in order to detect issues like: outdated server software, insecure HTTP headers, 
+                    insecure cookie settings and a few others.  We recommend doing a Full Scan for a comprehensive website assessment which includes detection of  
+                    SQL Injection, XSS, Local File Inclusion, OS Command Injection and more.</p>
+                    <button class="btn">Full scan</button>
+                </div>
+                <div class="scan_report">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="scan__report__text">
+                                <h2>sample report</h2>
+                                <p>Here is a Website Vulnerability Scanner sample report:</p>
+                                <ul>
+                                    <li>The report starts with a quick summary of the findings and risk ratings</li>
+                                    <li>Each finding has a detailed explanation in terms of risk and recommendations</li>
+                                    <li>The vulnerabilities are ordered by the risk level</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="scan__report__img">
+                                <img src="assets/images/4.png" alt="scan report" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature__section">
+            <div class="common__header">
+                <h1>Trusted by IT & Telecom Companies Like</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single__feature">
+                           <div class="feature__img">
+                               <img src="assets/icons/clipboard.png" alt="Self-Security Assessment" class="img-fluid">
+                           </div> 
+                           <div class="feature__text">
+                               <h4>Self-Security Assessment</h4>
+                               <p>You can perform a self-security assessment in order to
+                                detect weaknesses in your own application. This will 
+                                allow you to fix the vulnerabilities before being hit by 
+                                real attackers.</p>
+                           </div> 
+                        </div>
+                        <div class="single__feature">
+                           <div class="feature__img">
+                              <img src="assets/icons/Vector Smart Object.png" alt="Comprehensive Vulnerability Discovery" class="img-fluid">
+                           </div> 
+                           <div class="feature__text">
+                               <h3>Comprehensive Vulnerability Discovery</h3>
+                               <p>Detect a wide range of network service and web application vulnerabilities across any Internet facing system.</p>
+                           </div> 
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single__feature">
+                           <div class="feature__img">
+                              <img src="assets/icons/Vector Smart Object1.png" alt="Ongoing Vulnerability Management" class="img-fluid">
+                           </div> 
+                           <div class="feature__text">
+                               <h3>Ongoing Vulnerability Management</h3>
+                               <p>Schedule scans for weekly or monthly reports.Configure report to alert on changes to vulnerability count.</p>
+                           </div> 
+                        </div>
+                        <div class="single__feature">
+                           <div class="feature__img">
+                               <img src="assets/icons/real-time.png" alt="Real Time Risk Visibility" class="img-fluid">
+                           </div> 
+                           <div class="feature__text">
+                               <h3>Real Time Risk Visibility</h3>
+                               <p>Detailed reports that include vulnerability severity with technical details of immediate value to the user.</p>
+                           </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats__section">
+            <div class="stats__block">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-3">
+                            <div class="stats__single">
+                                <img src="assets/icons/check-mark.png" alt="guarented" class="img-fluid">
+                                <h1>100%</h1>
+                                <p>Guarented</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="stats__single">
+                                <img src="assets/icons/customer.png" alt="Satisfied Client" class="img-fluid">
+                                <h1>700<sub>K+</sub></h1>
+                                <p>Satisfied Client</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="stats__single">
+                                <img src="assets/icons/zoom.png" alt="Sites scanned daily" class="img-fluid">
+                                <h1>500</h1>
+                                <p>Sites scanned daily</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="stats__single">
+                                <img src="assets/icons/report (1).png" alt="Authenticate report generate" class="img-fluid">
+                                <h1>100%</h1>
+                                <p>Authenticate report generate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center order-1 order-md-0">
+                            <div class="stats__img">
+                                <img src="assets/images/mockup-desktop.png" alt="stats" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-0 order-md-1">
+                            <div class="common__header">
+                                <h1>Features of  Thirdeye</h1>
+                                <p>Facilities you will get using this scanner </p>
+                            </div>
+                            <div class="stats__text">
+                                <div class="stats__feature">
+                                    <img src="assets/icons/scan.png" alt="Automate your scan" class="img-fluid">
+                                    <p>Automate your scan</p>
+                                </div>
+                                <div class="stats__feature">
+                                    <img src="assets/icons/Vector Smart Object2.png" alt="Invite your other organization users" class="img-fluid">
+                                    <p>Invite your other organization users</p>
+                                </div>
+                                <div class="stats__feature">
+                                    <img src="assets/icons/team.png" alt="Work together with programmer and Developer" class="img-fluid">
+                                    <p>Work together with programmer and Developer</p>
+                                </div>
+                                <div class="stats__feature">
+                                    <img src="assets/icons/report (1).png" alt="Generate automated repor" class="img-fluid">
+                                    <p>Generate automated repor</p>
+                                </div>
+                                <div class="stats__feature">
+                                    <img src="assets/icons/vulnerability.png" alt="Find the most common vulnerabilities" class="img-fluid">
+                                    <p>Find the most common vulnerabilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="client__section">
+            <div class="container">
+                <div class="common__header">
+                    <h1>What our customers say</h1>
+                </div>
+                <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <div class="client__review">
+                                    <img src="assets/icons/left-quotes-sign.png" alt="quotes" class="img-fluid">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy 
+                                        text ever since the 1500s,</p>
+                                </div>
+                                <div class="client__info">
+                                    <div class="client__dp">
+                                        <img src="assets/images/Layer 1.png" alt="Al James, CTO" class="img-fluid">
+                                    </div>
+                                    <h3>Al James, CTO</h3>
+                                    <p>Ometria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#clientCarousel" role="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#clientCarousel" role="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+        </section>
+        <section class="price__section">
+            <div class="container d-none d-lg-block">
+                <div class="common__header">
+                    <h1>pricing</h1>
+                </div>
+                <div class="pricing__coloumn">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 px-0">
+                            <ul class="services__list">
+                                <li>SENSETIVE FILE CHECKER</li>
+                                <li>PHP INFO CHECK</li>
+                                <li>EMAIL SPOOFING</li>
+                                <li>CLICKJACKING</li>
+                                <li>OPEN REDIRECT</li>
+                                <li>XSS</li>
+                                <li>SQL INJECTION</li>
+                                <li>HTML INJECTION</li>
+                                <li>SUBDOMAIN TAKEOVER</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 px-1">
+                            <div class="single__price--column">
+                                <div class="price__block">
+                                    <h2>basic</h2>
+                                    <p>1 user</p>
+                                    <h3>$49/month</h3>
+                                </div>
+                                <ul class="price__list">
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li>free trial</li>
+                                </ul>
+                                <a href="#" class="btn">free sign up</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-1">
+                            <div class="single__price--column">
+                                <div class="price__block">
+                                    <h2>medium</h2>
+                                    <p>1 user</p>
+                                    <h3>$49/month</h3>
+                                </div>
+                                <ul class="price__list">
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li>free trial</li>
+                                </ul>
+                                <a href="#" class="btn">free sign up</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-1">
+                            <div class="single__price--column">
+                                <div class="price__block">
+                                    <h2>advance</h2>
+                                    <p>1 user</p>
+                                    <h3>$49/month</h3>
+                                </div>
+                                <ul class="price__list">
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                    <li>free trial</li>
+                                </ul>
+                                <a href="#" class="btn">free sign up</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 px-1">
+                            <div class="single__price--column custom__price">
+                                <div class="price__block">
+                                    <h2>custom</h2>
+                                    <h3>on demand</h3>
+                                </div>
+                                <p>Go beyond scanning what
+                                    you build and host with Get
+                                    it All! Designed for large 
+                                    organizations, this scalable 
+                                    offering is made for easy 
+                                    and flexible roll-out and 
+                                    provides additional 
+                                    Enterprise support, 
+                                    including:</p>
+                                <ul>
+                                    <li>Specific functionality</li>
+                                    <li>Custom scan limits</li>
+                                    <li>More Users</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-block d-lg-none">
+                <div id="priceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-6 px-0">
+                            <ul class="services__list">
+                                <li>SENSETIVE FILE CHECKER</li>
+                                <li>PHP INFO CHECK</li>
+                                <li>EMAIL SPOOFING</li>
+                                <li>CLICKJACKING</li>
+                                <li>OPEN REDIRECT</li>
+                                <li>XSS</li>
+                                <li>SQL INJECTION</li>
+                                <li>HTML INJECTION</li>
+                                <li>SUBDOMAIN TAKEOVER</li>
+                            </ul>
+                        </div>
+                    <div class="col-6 px-0">
+                        <div class="single__price--column">
+                            <div class="price__block">
+                                <h2>basic</h2>
+                                <p>1 user</p>
+                                <h3>$49/month</h3>
+                            </div>
+                            <ul class="price__list">
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li>free trial</li>
+                            </ul>
+                            <a href="#" class="btn">free sign up</a>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 px-0">
+                            <ul class="services__list">
+                                <li>SENSETIVE FILE CHECKER</li>
+                                <li>PHP INFO CHECK</li>
+                                <li>EMAIL SPOOFING</li>
+                                <li>CLICKJACKING</li>
+                                <li>OPEN REDIRECT</li>
+                                <li>XSS</li>
+                                <li>SQL INJECTION</li>
+                                <li>HTML INJECTION</li>
+                                <li>SUBDOMAIN TAKEOVER</li>
+                            </ul>
+                        </div>
+                    <div class="col-6 px-0">
+                        <div class="single__price--column">
+                            <div class="price__block">
+                                <h2>medium</h2>
+                                <p>1 user</p>
+                                <h3>$49/month</h3>
+                            </div>
+                            <ul class="price__list">
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li>free trial</li>
+                            </ul>
+                            <a href="#" class="btn">free sign up</a>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6 px-0">
+                            <ul class="services__list">
+                                <li>SENSETIVE FILE CHECKER</li>
+                                <li>PHP INFO CHECK</li>
+                                <li>EMAIL SPOOFING</li>
+                                <li>CLICKJACKING</li>
+                                <li>OPEN REDIRECT</li>
+                                <li>XSS</li>
+                                <li>SQL INJECTION</li>
+                                <li>HTML INJECTION</li>
+                                <li>SUBDOMAIN TAKEOVER</li>
+                            </ul>
+                        </div>
+                    <div class="col-6 px-0">
+                        <div class="single__price--column">
+                            <div class="price__block">
+                                <h2>Advance</h2>
+                                <p>1 user</p>
+                                <h3>$49/month</h3>
+                            </div>
+                            <ul class="price__list">
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li><img src="assets/icons/tick.png" alt="tick" class="img-fluid"></li>
+                                <li>free trial</li>
+                            </ul>
+                            <a href="#" class="btn">free sign up</a>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#priceCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#priceCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </section>
+        <section class="banner__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner__img">
+                            <img src="assets/images/desktop-mockup.png" alt="banner" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="banner__text">
+                            <div class="common__header">
+                                <h1>Ready to get started with your 30-day trial?</h1>
+                                <button class="btn">Try for free</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resurces__section">
+            <div class="container">
+                <div class="common__header">
+                    <h1>resources</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <article>
+                            <h3>guides</h3>
+                            <div class="article__img">
+                                <img src="assets/images/Vector Smart Object copy 3.png" alt="guides" class="img-fluid">
+                            </div>
+                            <div class="article__text">
+                                <p>Follow our helpful guides and tutorials to learn how to use thirdeye </p>
+                                <a href="#" class="btn">Learn more</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <article>
+                            <h3>Tips & Tricks</h3>
+                            <div class="article__img">
+                                <img src="assets/images/Vector Smart Object copy 3.png" alt="guides" class="img-fluid">
+                            </div>
+                            <div class="article__text">
+                                <p>Follow our helpful guides and tutorials to learn how to use thirdeye </p>
+                                <a href="#" class="btn">Learn more</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <article>
+                            <h3>Blogs</h3>
+                            <div class="article__img">
+                                <img src="assets/images/Vector Smart Object copy 3.png" alt="guides" class="img-fluid">
+                            </div>
+                            <div class="article__text">
+                                <p>Follow our helpful guides and tutorials to learn how to use thirdeye </p>
+                                <a href="#" class="btn">Learn more</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social__links d-block d-lg-none">
+                <ul>
+                    <li><a href="https://www.facebook.com/techforing/"><img src="assets/icons/fb.png" alt="facebook" class="img-fluid"></a></li>
+                    <li><a href="https://www.linkedin.com/company/techforingltd./"><img src="assets/icons/in.png" alt="linked" class="img-fluid"></a></li>
+                    <li><a href="https://twitter.com/techforingltd?lang=en"><img src="assets/icons/tweet.png" alt="twitter" class="img-fluid"></a></li>
+                    <li><a href="https://www.instagram.com/techforingltd/"><img src="assets/icons/insta.png" alt="instagram" class="img-fluid"></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__links">
+                        <h4>Company <img src="assets/icons/chevron-compact-down.svg" alt="arrow" class="img-fluid"></h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">CLIENTS & THEIR STORIES</a></li>
+                            <li><a href="#">PARTNERSHIP PROGRAM</a></li>
+                            <li><a href="#">Franchise Program</a></li>
+                            <li><a href="#">INVESTOR RELATION</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">find us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__links">
+                        <h4>popular links <img src="assets/icons/chevron-compact-down.svg" alt="arrow" class="img-fluid"></h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">CLIENTS & THEIR STORIES</a></li>
+                            <li><a href="#">PARTNERSHIP PROGRAM</a></li>
+                            <li><a href="#">Franchise Program</a></li>
+                            <li><a href="#">INVESTOR RELATION</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">find us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__links">
+                        <h4>Resources <img src="assets/icons/chevron-compact-down.svg" alt="arrow" class="img-fluid"></h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">CLIENTS & THEIR STORIES</a></li>
+                            <li><a href="#">PARTNERSHIP PROGRAM</a></li>
+                            <li><a href="#">Franchise Program</a></li>
+                            <li><a href="#">INVESTOR RELATION</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">find us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__links">
+                        <h4>legal <img src="assets/icons/chevron-compact-down.svg" alt="arrow" class="img-fluid"></h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">LEADERSHIP</a></li>
+                            <li><a href="#">CLIENTS & THEIR STORIES</a></li>
+                            <li><a href="#">PARTNERSHIP PROGRAM</a></li>
+                            <li><a href="#">Franchise Program</a></li>
+                            <li><a href="#">INVESTOR RELATION</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">find us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social__links d-none d-lg-block">
+                <ul>
+                    <li><a href="https://www.facebook.com/techforing/"><img src="assets/icons/fb.png" alt="facebook" class="img-fluid"></a></li>
+                    <li><a href="https://www.linkedin.com/company/techforingltd./"><img src="assets/icons/in.png" alt="linked" class="img-fluid"></a></li>
+                    <li><a href="https://twitter.com/techforingltd?lang=en"><img src="assets/icons/tweet.png" alt="twitter" class="img-fluid"></a></li>
+                    <li><a href="https://www.instagram.com/techforingltd/"><img src="assets/icons/insta.png" alt="instagram" class="img-fluid"></a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="sub__footer">
+            <div class="container d-flex justify-content-between">
+                <p class="d-none d-lg-block">Create an account or login <a href="#" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg></a>
+                </p>
+                <p>Copyright @ 2021 Techforing Ltd.</p>
+            </div>
+        </section>
+    </footer>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
